@@ -1,0 +1,74 @@
+.testimonials {
+  padding: 50px 0;
+  background: #56b2801a;
+  &__title {
+    text-align: center;
+    font-size: 40px;
+    color: #0b254b;
+  }
+  &__desc {
+    font-size: 18px;
+    text-align: center;
+    color: #5e6e89;
+    padding: 30px 0;
+  }
+  &__frames {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+  }
+  &__frame {
+    img {
+      width: 150px;
+    }
+    h3 {
+      text-align: center;
+      width: 80%;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+  }
+  p {
+    color: #7c8087;
+  }
+  @media (max-width: 1000px) {
+    &__frames {
+      gap: 30px;
+    }
+    &___frame {
+      padding: 5px;
+      img {
+        width: 100px;
+      }
+      h3 {
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+  }
+  @media (max-width: 750px) {
+    &__frames {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media (max-width: 500px) {
+    &__frames {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

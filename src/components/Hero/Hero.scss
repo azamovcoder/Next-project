@@ -1,0 +1,88 @@
+.hero {
+  background: url("../../app/assets/hero.png") no-repeat center/cover;
+  height: 800px;
+  width: 100%;
+  position: relative;
+  &__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f7f8fae8;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 70px 50px;
+    span {
+      font-size: 40px;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      text-align: center;
+      font-size: 18px;
+      width: 85%;
+    }
+    button {
+      color: #fff;
+      background: #56b280;
+      padding: 8px 60px;
+      font-size: 18px;
+      border: none;
+    }
+  }
+  @media (max-width: 1040px) {
+    &__box {
+      width: 60%;
+      padding: 70px 20px;
+    }
+  }
+  @media (max-width: 700px) {
+    height: 600px;
+    &__box {
+      width: 80%;
+      padding: 70px 20px;
+    }
+  }
+  @media (max-width: 500px) {
+    &__box {
+      padding: 50px 20px;
+      span {
+        font-size: 35px;
+      }
+      h1 {
+        font-size: 35px;
+        text-align: center;
+      }
+      P {
+        font-size: 16px;
+      }
+      button {
+        padding: 8px 30px;
+      }
+    }
+  }
+  @media (max-width: 350px) {
+    height: 400px;
+    &__box {
+      gap: 10px;
+      padding: 30px 20px;
+      span {
+        font-size: 30px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 12px;
+      }
+      button {
+        font-size: 14px;
+        padding: 8px 20px;
+      }
+    }
+  }
+}
