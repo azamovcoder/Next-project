@@ -2,6 +2,7 @@ import "./SinglePage.scss";
 
 import Image from "next/image";
 import React from "react";
+import SinglePageButtons from "./SinglePageButtons";
 import { getData } from "@/app/api/fetchData";
 
 const SinglePage = async ({ params }) => {
@@ -42,7 +43,7 @@ const SinglePage = async ({ params }) => {
                 order. The discount will be applied at checkout. See details
               </p>
             </div>
-            <button>+ Add to cart</button>
+            <SinglePageButtons product={product} />
           </div>
           <div className="singlePage__info__bottom">
             <p>

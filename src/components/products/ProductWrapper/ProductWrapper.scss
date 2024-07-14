@@ -5,6 +5,21 @@
     padding: 20px;
     font-size: 36px;
   }
+  &__category {
+    padding: 20px 0;
+    overflow-x: auto;
+    scroll-behavior: auto;
+    overflow: hidden;
+    display: flex;
+    gap: 15px;
+    &__item {
+      cursor: pointer;
+      background: #56b280;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+  }
 
   p {
     text-align: center;
@@ -69,6 +84,32 @@
         color: #56b280;
         font-size: 18px;
         font-weight: 600;
+      }
+      &__button {
+        padding: 5px;
+        width: 60px;
+        background: #56b280;
+        color: #fff;
+        border-radius: 3px;
+        border: none;
+      }
+      &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        font-size: 16px;
+        button {
+          background: #56b280;
+          color: #fff;
+          border: none;
+          border-radius: 3px;
+          padding: 5px;
+        }
+        span {
+          color: #56b280;
+          font-size: 18px;
+        }
       }
     }
   }

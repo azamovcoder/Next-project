@@ -1,0 +1,39 @@
+.manageProducts {
+  &__cards {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  &__card {
+    &__img {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    border: 1px solid gray;
+    border-radius: 5px;
+
+    &__info {
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__desc {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+    &__delete__button {
+      padding: 3px;
+      background: none;
+      color: red;
+      border: 2px solid red;
+      border-radius: 3px;
+      font-size: 18px;
+    }
+  }
+}

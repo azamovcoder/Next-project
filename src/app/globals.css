@@ -22,3 +22,6 @@ a{
 button{
   cursor: pointer;
 }
+.df{
+  display: flex;justify-content: space-between;
+}

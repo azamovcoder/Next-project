@@ -18,7 +18,8 @@ import { VscError } from "react-icons/vsc";
 const CartWrapper = () => {
   const dispatch = useDispatch();
   const cartData = useSelector((state) => state.cart.value);
-  console.log(cartData.length);
+
+  console.log(cartData);
   return (
     <div>
       {cartData.length > 0 ? (

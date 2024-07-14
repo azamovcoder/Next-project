@@ -39,7 +39,9 @@ const Header = () => {
           </ul>
           <div className="header__buttons">
             <button>
-              <FaRegUser />
+              <Link href={"/admin/createProduct"}>
+                <FaRegUser />
+              </Link>
             </button>
             <button>
               <span>{cartData.length > 0 ? cartData.length : 0}</span>{" "}

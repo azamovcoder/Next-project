@@ -1,0 +1,39 @@
+.manage__category {
+  padding: 20px;
+
+  &__cards {
+    padding: 20px 0;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__title {
+    font-size: 28px;
+    color: grey;
+  }
+
+  &__item {
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s;
+    gap: 20px;
+    &:hover {
+      background: #ddd;
+    }
+  }
+
+  &__delete {
+    border: none;
+    color: red;
+    padding: 10px;
+    background: none;
+    font-size: 20px;
+  }
+}
